@@ -1,0 +1,25 @@
+/* Примеры запросов для демонстрации работы API */
+
+
+
+http://test-ryabova/?getDeliveryCost={"delivery_zone_id":"2"}
+ 
+http://test-ryabova/?addOrder={"client_id":"1","delivery_date":"2020-07-23","delivery_time_interval_id":"1","delivery_zone_id":"1","address":"Воронеж, улица Ленина, дом 1","order_comment":"1 подъезд, 14 этаж","products":[{"product_id":"1","amount":"5"},{"product_id":"5","amount":"1"}]}
+ 
+http://test-ryabova/?addOrder={"client_id":"2","delivery_date":"2020-07-25","delivery_time_interval_id":"2","delivery_zone_id":"2","address":"Москва, 3-я улица Строителей","order_comment":"null","products":[{"product_id":"3","amount":"15"},{"product_id":"2","amount":"7"}]}
+
+http://test-ryabova/?getOrderIds={}
+
+http://test-ryabova/?getOrderInfo={"order_id":"1"}
+
+http://test-ryabova/?getOrderProducts={"order_id":"1"}
+
+http://test-ryabova/?getOrderCost={"order_id":"1"}
+
+http://test-ryabova/?getAvailableOrders={}
+
+http://test-ryabova/?takeOrder={"order_id":"1","courier_id":2}
+
+http://test-ryabova/?submitOrder={"order_id":"1"}
+
+http://test-ryabova/?cancelOrder={"order_id":"1"}
